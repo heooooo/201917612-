@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册页面</title>
+    <script src="js/main.js"></script>
+	<link href="style/main.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div class="rg_layout">
+    <div class="rg_left">
+        <p>USER REGISTER</p>
+        <p>新用户注册</p>
+    </div>
+    <div class="rg_center">
+        <div class="rg_form">
+            <form action="#" id="form" method="post" onsubmit="return true">
+                <table>
+                    <tr>
+                       <td class="td_left"><label for="username">用户名</label></td>
+                        <td class="td_right">
+                            <!-- onblur监听用户输入的值 -->
+                            <input type="text" name="username" id="username" placeholder="请输入用户名" onblur="checkUsername(this.value)">
+                            <span id="s_username" class="error"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td_left"><label for="password">密码</label></td>
+                        <td class="td_right">
+							<span class="box">
+								<input type="password" name="password" id="password" placeholder="请输入密码"  >
+								<label for="password">
+								<img src="img/close.png" alt="" id= "eye1">
+								</label>
+							</span>
+							<span id="s_password" class="error"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td_left"><label for="password2">请确认密码</label></td>
+                        <td class="td_right">
+							<span class="box">
+								<input type="password" name="password2" id="password2" placeholder="请再次输入密码" >
+								<label for="password2">
+								<img src="img/close.png" alt="" id= "eye2">
+								</label>
+							</span>
+                            <span id="s_password2" class="error"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td_left"><label for="email">电子邮箱</label></td>
+                        <td class="td_right"><input type="text" name="email" id="email" placeholder="请输入邮箱">
+                         <span id="test_email" class="error"></span>
+                        </td>
+                        
+                    </tr>
+
+                    <tr>
+                          <td class="td_left"><label>年龄：</label></td>
+                          <td class="td_right"><input type="text" name="age"  id="age" size="20" onChange='check("age")' placeholder="请输入年龄"></td>
+                          <td id="ageCheck" class="check" hidden="true">*年龄不能小于17岁</td>
+                        </tr>
+                    <tr >
+                          <td class="td_left"><label>体重：</label></td>
+                          <td class="td_right"><input type="text" name="weight" id="weight"  onChange='check("weight")' placeholder="请输入体重"></td>
+                          <td id="weightCheck" class="check" hidden="true">*体重范围为30~150KG</td>
+                    </tr>
+                    <tr>
+                        <td class="td_left"><label>性别</label></td>
+                        <td class="td_right">
+                            <input type="radio" name="gender" value="male" checked> 男
+                            <input type="radio" name="gender" value="female"> 女
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2" id="td_sub">
+                          <input type="submit" id="btn_sub" value="注 册" onclick="checkform();"> 
+                          <input type="reset" id="btn_subs" value="重 置">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+            <p class="para">已有账号?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">立即登录</a></p>
+        </div>
+    </div>
+</div>
+<script>
+	     //获取ID内容
+      var eye1 = document.getElementById('eye1');
+      var password = document.getElementById('password');
+      var flag1 = 0;
+          //触发点击事件 处理程序
+      eye1.onclick = function(){
+          //点击一次后 flag一定要变化
+          if (flag1 == 0){
+              password.type = 'text';
+              eye1.src='img/open.png';
+              flag1 = 1;
+          }else{
+              password.type = 'password';
+              eye1.src='img/close.png';
+              flag1 = 0;
+          }
+      }
+	  var eye2 = document.getElementById('eye2');
+      var password2 = document.getElementById('password2');
+      var flag2 = 0;
+          //注册事件 处理程序
+      eye2.onclick = function(){
+          //点击一次后 flag一定要变化
+          if (flag2 == 0){
+              password2.type = 'text';
+              eye2.src='img/open.png';
+              flag2 = 1;
+          }else{
+              password2.type = 'password';
+              eye2.src='img/close.png';
+              flag2 = 0;
+          }
+      }
+</script>
+</body>
+</html>

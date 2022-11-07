@@ -1,0 +1,185 @@
+*{
+    margin: 0px;
+  
+}
+body{
+    font-family: "宋体";
+    font-size: 13px;
+    color: #000;
+    background-color: #fff;
+}
+a:link,a:visited{
+    color: #333;
+    text-decoration: none;
+    font-weight: normal;
+}
+a:active,a:hover{
+    color: red;
+
+}
+#sub_wrap{
+    width: 984px;
+    margin: 0 auto;
+}
+#top{
+    width: 100%;
+    float: right;
+    width: 150px;
+    font-family: "黑体";
+    text-align: right;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-right: 20px;
+}
+#top span{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+#nav{
+    width: 984px;
+    float: left;
+    overflow: hidden;
+}
+/* #nav_log{
+   float: left;
+   width: 10px;
+   height: 10px;
+    background: url(./1.png)no-repeat;
+} 这是logo图标的css 可以删除*/
+#nav_menu{
+    height:36px;
+    margin: 10px 0px 0px 30px;
+    float: left;
+}
+#nav_menu_head{
+    float: left;
+    width: 20px;
+    height: 36px;
+   
+}
+#nav_menu_mid{
+    float: left;
+    width: 580px;
+    height: 36px;
+    
+}
+#nav_menu_mid ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+#nav_menu_mid li{
+    float: left;
+    margin-top: 10px;
+    padding-left: 11px;
+}
+#nav_menu_mid a{
+    font-family: "黑体";
+    font-size: 15px;
+    color:#000;
+}
+#nav_menu_tail{
+    float: left;
+    width: 20px;
+    height: 36px;
+    
+}
+#sub_main{
+    float: left;
+    width: 984px;
+    height: auto;
+    margin-top: 15px;
+}
+#sub_main_left{
+    float: left;
+    width: 180px;
+    height: 300px;
+    margin-left: 25px;
+}
+#sub_main_left_top{
+    width: 180px;
+    height: 80px;
+
+}
+#sub_main_left_top h3{
+    height: 30px;
+    font-family: "黑体";
+    font-size: 20px;
+    color: #39f;
+    text-align: center;
+    padding-top: 25px;
+}
+#sub_main_left_top h3 span{
+    color: #666;
+    margin-left: 5px;
+    font-size: 18px;
+}
+#sub_main_left_bottom{
+    width: 180px;
+    height: auto;
+   
+}
+#sub_main_left_bottom ul{
+    padding: 0 25px;
+    line-height: 30px;
+}
+#sub_main_left_bottom ul li{
+    list-style: none;
+    text-align: center;
+    border-bottom: 1px dashed #ccc;
+}
+#sub_main_left_bottom ul a:hover{
+    color:#39f;
+    text-decoration: none;
+}
+#sub_main_left_behind{
+    
+    height: 25px;
+    width: 180px;
+}
+#sub_main_main{
+    float: left;
+    height: 500px;
+    margin-left: 10px;
+}
+#sub_main_main_top{
+    width: 720px;
+    height: 55px;
+}
+#sub_main_main_top img{
+    margin-top: 20px;
+    margin-left: 30px;
+}
+#sub_main_main_top span{
+    color: #666;
+    font-family: "黑体";
+    font-size: 14px;
+    padding-left: 10px;
+}
+#sub_main_main_content{
+    width: 720px;
+    height: auto;
+}
+.sub_main_main_content_list{
+    font-size: 14px;
+    padding-top: 20px;
+    padding-left: 50px;
+    line-height: 30px;
+    list-style: square;
+}
+#sub_main_main_content li{
+    border-bottom: 1px dashed #ccc;
+}
+.sub_main_main_content_list a:hover{
+    color: #f00;
+    text-decoration: none;
+}
+#footer{
+    clear: both;
+    height: 65px;
+    margin: 0;
+    padding: 10px;
+    font-size: 13px;
+    color: #000;
+    text-align: center;
+}
